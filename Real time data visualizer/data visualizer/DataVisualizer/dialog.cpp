@@ -117,9 +117,9 @@ void Dialog::initFlags()
 void Dialog::checkAndOpenMainWindow()
 {
     if (isConnected) {
-        setHidden(true);
-        auto mainWindow = new MainWindow(socket, this);
+        auto mainWindow = new MainWindow(socket);
         mainWindow->show();
+        this->close();
     }
 }
 

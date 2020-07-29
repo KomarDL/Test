@@ -24,7 +24,7 @@ void DataProcessor::process()
 void DataProcessor::reciveRawData(QList<QPointF> data)
 { 
     rawData.append(data);
-    rawData = shrinkToFit(rawData, maxRawData * 3);
+    rawData = shrinkToFit(rawData, maxRawData * 2);
     auto resultData = selectData(rawData);
     resultData = shrinkToFit(resultData, dotsCount);
     smoothing(resultData);

@@ -9,7 +9,7 @@ class DataProcessor : public QObject
 {
     Q_OBJECT
     static constexpr quint32 dotsCount = 5000;
-    static constexpr quint32 maxRawData = 100000;
+    static constexpr quint32 maxRawData = 50000;
 
 public:
     static constexpr quint64 allTime = 0;
